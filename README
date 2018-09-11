@@ -1,7 +1,0 @@
-Tianyi Zhang
-ECE3220
-
-Known Design: the program should implement a same functionality as in a pthread API. It has basic functionality as create, yield, join, and exit, as well as synchronization characterisitcs, such as mutexlock, mutexunlock, wait, signal.
-
-Known Problem: some parts of the code is not implementing interrupt enabling correctly (due to the
-complexity of the code, I failed to debug it). Also, the memory size taken by code increases exponentially due to the array implementation. Every time when the memory is not enough, realloc will double the original size and return it the threads. 
